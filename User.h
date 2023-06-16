@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 #include <iostream>
 #include<string>
 #include <Windows.h>
@@ -36,12 +35,12 @@ public:
     void FillArray();
     static int Get_records_in_file(const std::string name_file);
     static std::string getPhoneFromFile2();
-    static std::string getPhoneFromFile3(); //функция проверки телефонного номера при выборке сообщений
+    static std::string getPhoneFromFile3(); //ГґГіГ­ГЄГ¶ГЁГї ГЇГ°Г®ГўГҐГ°ГЄГЁ ГІГҐГ«ГҐГґГ®Г­Г­Г®ГЈГ® Г­Г®Г¬ГҐГ°Г  ГЇГ°ГЁ ГўГ»ГЎГ®Г°ГЄГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГ©
     bool getIndLogPasswFromFile();
     void getListUsersFromFile();
     friend std::ostream& operator<< (std::ostream& out, const User& user);
     friend std::istream& operator>> (std::istream& in, User& user);
     bool operator==(const User& obj2) const;
     ~User();
-    std::string controlPhone; //переменная проверки телефона отправителя - исп. в блоке main
+    std::string controlPhone; //ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г Гї ГЇГ°Г®ГўГҐГ°ГЄГЁ ГІГҐГ«ГҐГґГ®Г­Г  Г®ГІГЇГ°Г ГўГЁГІГҐГ«Гї - ГЁГ±ГЇ. Гў ГЎГ«Г®ГЄГҐ main
 };
